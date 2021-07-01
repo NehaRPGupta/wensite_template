@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="../photos/Stars-sphere.gif" alt="">
+    </div>
+    <div class="full-form">
+        <nav>
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="../img/logo.svg" alt="logo"
+                        class="logo">
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <ul class="links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="review.html">About</a>
+                    </li>
+                    <li>
+                        <a href="Blog.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="form-center">
+            <div class="title">
+                <h3>Contact Us</h3>
+            </div>
+           <form action="" id="form" class="form">
+               <div class="form-control">
+                   <label for="username">username</label>
+                   <input type="text" placeholder="abcd" id="username">
+                   <i class="fas fa-check-circle"></i>
+                   <i class="fas fa-exclamation-circle"></i>
+                   <small>error!</small>
+               </div>
+
+               <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="abc@123gmail.com" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error!</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error!</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" placeholder="Password" id="password2">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error!</small>
+            </div>
+
+            <button>submit</button>
+
+           </form>
+        </div>
+
+        <footer class="section">
+            <p>
+                copyright &copy; Projects tours
+                <span id="date"></span>. all rights reserved
+            </p>
+        </footer>
+
+    </div>
+    <script src="contact.js"></script>
+</body>
+
+</html>

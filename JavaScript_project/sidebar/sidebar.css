@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(206, 230, 230);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    box-shadow: 2px 3px 4px #ccc;
+    transition: all .5s ease-in-out;
+    transform: translate(-100%);
+}
+
+.show-sidebar{
+    transform: translate(0);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+ul li {
+    padding: 10px;
+    letter-spacing: 2px;
+    list-style: none;
+}
+
+.links > li {
+    padding: 20px 20px;
+}
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.logo {
+    text-shadow: 2px 2px 2px #ccc;
+    color: #333;
+    font-size: 24px;
+    margin: 10px 5px;
+}
+
+.logo > span {
+    color: rgb(94, 181, 235);
+}
+
+.links > li > a{
+    color: #333;
+    font-weight: 700;
+}
+
+.social > li > a {
+    color: rgb(94, 177, 228);
+}
+
+.links {
+    height: auto;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+}
+
+
+.links > li:hover {
+    background: rgb(94, 181, 235);
+    transition: all .9s ease;
+    font-size: 14px;
+}
+
+.links a:hover {
+    padding: 0;
+    background: transparent;
+}
+
+.sidebar-toggle,
+.close-btn {
+    background: transparent;
+    border: transparent;
+    margin: 10px 10px;
+    transition: all .4s ease;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sidebar-toggle:hover,
+.close-btn:hover {
+    font-size: 36px;
+    transform: rotate(90deg)
+}
+
+.sidebar-toggle > i,
+.close-btn > i{
+    font-size: 26px;
+    width: 30px;
+    color: blue;
+}
+
+.close-btn > i {
+    color: rgba(153, 13, 13, 0.692);
+}
+
+@media (min-width: 676px) {
+    .sidebar {
+        width: 400px;
+    }
+}
